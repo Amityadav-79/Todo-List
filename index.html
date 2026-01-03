@@ -40,10 +40,11 @@
            
         }
 
-        .btn-add{
+         .btn-add{
             background-color: green;
             color: white;
             border: none;
+            text-align: center;
             border-radius: 5px;
             padding: 10px 0px;
             cursor: pointer;
@@ -52,10 +53,24 @@
              background-color: rgb(118, 9, 32);
             color: white;
             border: none;
+            text-align: center;
             border-radius: 5px;
             padding: 10px 0px;
             cursor: pointer;
         }
+
+          @media (max-width: 600px) {
+        .grid-container,
+        .todo-container {
+            grid-template-columns: 1fr;
+        }
+
+        .btn-add,
+        .btn-delete {
+            width: 100%;
+        }
+    }
+        
 
 
     </style>
@@ -73,5 +88,6 @@
 
     <script src="script.js"></script>
 </body>
+
 
 </html>
